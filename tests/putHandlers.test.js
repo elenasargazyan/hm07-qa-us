@@ -12,7 +12,7 @@ const requestBody = {
 	
   }
   
-  test('cheking the status code shold be 200 ok', async () => {
+  test('should be 200 ok on status code', async () => {
 	  let statusCode
 	  try {
 		  const response = await fetch(`${config.API_URL}/api/v1/kits/4`, {
@@ -30,7 +30,7 @@ const requestBody = {
   });
 
 
-test('cheking the productsList of kit id path 4 shoul be "ok": true', async () => {
+test('shoul be "ok": true in the productsList of kit id path 4', async () => {
 	let productsList
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/4`, {

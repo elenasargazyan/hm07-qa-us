@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
 
-test('cheking the status code should be 200 ok', async () => {
+test('should be 200 ok on status code', async () => {
 	let statusCode
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
@@ -14,7 +14,7 @@ test('cheking the status code should be 200 ok', async () => {
 	}
 	expect(statusCode).toBe(200)
 });
-test('cheking after deleting is "ok": true', async () => {
+test('should be "ok": true after deleting', async () => {
 	let ok
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {

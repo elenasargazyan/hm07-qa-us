@@ -12,7 +12,7 @@ const requestBody = {
   ]
 }
 
-test('cheking the status code shold be 200 ok', async () => {
+test('should be 200 ok on status code', async () => {
 	let statusCode
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/couriers/check`, {
@@ -29,7 +29,7 @@ test('cheking the status code shold be 200 ok', async () => {
 	expect(statusCode).toBe(200);
 });
 
-test('cheking the  deliveryPrice of speedye it should be 0', async () => {
+test('should be 0 deliveryPrice of speedy', async () => {
 	let deliveryPrice
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/couriers/check`, {
